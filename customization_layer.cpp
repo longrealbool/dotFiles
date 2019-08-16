@@ -5,6 +5,7 @@ void custom_keys(Bind_Helper *context){
     
     begin_map(context, mapid_global); {
         bind(context, 'p', MDFR_CTRL, open_panel_vsplit );
+        bind(context, 'p', MDFR_ALT, close_panel);
 		bind(context, 'w', MDFR_CTRL, change_active_panel);
 
     } end_map(context);
@@ -14,6 +15,7 @@ void custom_keys(Bind_Helper *context){
 		bind(context, 'e', MDFR_ALT, seek_end_of_line);
 		bind(context, 'r', MDFR_CTRL, replace_in_range);
 		bind(context, 'a', MDFR_CTRL, seek_beginning_of_line);
+        bind(context, 'a', MDFR_ALT, replace_in_range);
 
 
     } end_map(context);
